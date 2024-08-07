@@ -6,7 +6,7 @@
              x:DataType="local:MainPageModel">
     
     <Grid>
-        <BoxView BackgroundColor="Red" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100" IsVisible="{Binding IsSelected}" />
+        <BoxView BackgroundColor="Red" PropertyChanged="BoxView_OnPropertyChanged" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="100" HeightRequest="100" IsVisible="{Binding IsSelected}" />
         <Button HorizontalOptions="Start" VerticalOptions="Start" Text="{Binding ButtonText}" Command="{Binding ToggleIsSelectedCommand}" />
     </Grid>
 
