@@ -9,7 +9,7 @@ public partial class MainPageModel : ObservableObject
 {
     [ObservableProperty]
     [NotifyPropertyChangedFor(nameof(ButtonText))]
-    bool isSelected = false;
+    public partial bool IsSelected { get; set; } = false;
     
     public string ButtonText => $"Toggle IsSelected: {IsSelected}";
 
